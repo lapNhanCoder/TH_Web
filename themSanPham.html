@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm sản phẩm</title>
+</head>
+<body>
+    <form action="#" method="post" style="max-width: 500px; margin: auto; border: 1px solid #ccc; padding: 15px; font-family: Arial, sans-serif;">
+        <h3 style="text-align: center;">THÊM SẢN PHẨM MỚI</h3>
+        <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;">
+            <tr>
+                <td width="30%">Mã sản phẩm</td>
+                <td><input type="text" name="txtMaSP" value="49181802" style="width: 90%;"></td>
+            </tr>
+            <tr>
+                <td>Tên sản phẩm</td>
+                <td><input type="text" name="txtTenSP" value="Oxford Advanced Learn" style="width: 90%;"></td>
+            </tr>
+            <tr>
+                <td>Hình ảnh</td>
+                <td><input type="file" name="fileHinhAnh"></td>
+            </tr>
+            <tr>
+                <td>Hãng sản xuất</td>
+                <td>
+                    <select name="selHangSX">
+                        <option value="ThienLong">Thiên Long</option>
+                        <option value="HongHa">Hồng Hà</option>
+                        <option value="Deli">Deli</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Kích thước</td>
+                <td>
+                    W: <input type="text" name="txtW" value="200" style="width: 40px;"> 
+                    H: <input type="text" name="txtH" value="300" style="width: 40px;"> mm
+                </td>
+            </tr>
+            <tr>
+                <td>Số trang</td>
+                <td><input type="text" name="txtSoTrang" value="1200" style="width: 100px;"> trang</td>
+            </tr>
+            <tr>
+                <td>Tác giả</td>
+                <td><input type="text" name="txtTacGia" value="English Corpus" style="width: 90%;"></td>
+            </tr>
+            <tr>
+                <td>Giá</td>
+                <td><input type="text" name="txtGia" value="517.000" style="width: 100px;"></td>
+            </tr>
+            <tr>
+                <td>Màu</td>
+                <td><input type="color" name="colMau" value="#000000"></td>
+            </tr>
+            <tr>
+                <td>Xuất xứ</td>
+                <td><input type="text" name="txtXuatXu" value="Không có" style="width: 90%;"></td>
+            </tr>
+            <tr>
+                <td>Thể loại</td>
+                <td>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                        <label><input type="checkbox" name="chkTheLoai" value="VanHoc"> Văn học</label>
+                        <label><input type="checkbox" name="chkTheLoai" value="ThieuNhi"> Thiếu nhi</label>
+                        <label><input type="checkbox" name="chkTheLoai" value="KinhTe"> Kinh tế</label>
+                        <label><input type="checkbox" name="chkTheLoai" value="GiaoKhoa"> Giáo khoa</label>
+                        <label><input type="checkbox" name="chkTheLoai" value="TamLy"> Tâm lý</label>
+                        <label><input type="checkbox" name="chkTheLoai" value="NgoaiNgu" checked> Ngoại ngữ</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Mô tả chi tiết</td>
+                <td>
+                    <textarea name="txtMoTa" rows="5" style="width: 90%;">Paperback - 10th Edition (with 1 Year's Access To Both Premium Online And App)</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" style="padding-top: 15px;">
+                    <input type="submit" value="Thêm">
+                    <input type="reset" value="Xóa">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
